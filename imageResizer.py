@@ -15,5 +15,5 @@ new_height = int(image.shape[0] * scale_percent / 100)
 
 # resize image
 output = cv2.resize(image, (new_width, new_height))
-cv2.imshow("new_image", output)
+cv2.imwrite("new_image.jpeg", output)
 cv2.waitKey(0)
